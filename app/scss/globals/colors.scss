@@ -1,0 +1,57 @@
+:root {
+	--white: hsl(0, 0%, 100%);
+	--black: hsl(0, 0%, 0%);
+	--bright-orange: hsl(31, 77%, 52%);
+	--dark-cyan: hsl(184, 100%, 22%);
+	--very-dark-cyan: hsl(179, 100%, 13%);
+	--trans-white-paragraph: hsla(0, 0%, 100%, 0.75);
+	--very-ltgray: hsl(0, 0%, 95%);
+}
+
+body {
+	background-color: var(--very-ltgray);
+}
+
+.sedans {
+	background-color: var(--bright-orange);
+}
+
+.suvs {
+	background-color: var(--dark-cyan);
+}
+
+.luxury {
+	background-color: var(--very-dark-cyan);
+}
+
+.btn {
+	background-color: var(--very-ltgray);
+	border: rem(2) solid var(--very-ltgray);
+} 
+
+.sedans > .btn {
+	color: var(--bright-orange);
+}
+
+.sedans > .btn:hover {
+	background-color: var(--bright-orange);
+	color: var(--white);
+}
+
+.suvs > .btn {
+	color: var(--dark-cyan);
+}
+
+.suvs > .btn:hover {
+	background-color: var(--dark-cyan);
+	color: var(--white);
+}
+
+.luxury > .btn {
+	color: var(--very-dark-cyan);
+}
+
+.luxury > .btn:hover {
+	background-color: var(--very-dark-cyan);
+	color: var(--white);
+}

@@ -1,0 +1,53 @@
+@use '../util' as *;
+
+h2 {
+	margin: rem(40) 0 rem(40);
+}
+
+p {
+	margin-bottom: rem(90);
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	margin: auto;
+	height: 100vh;
+	max-width: rem(920);
+	@include breakpoint-down(small) {
+		justify-content: center;
+		height: fit-content;
+	}
+}
+
+.cards {
+	display: flex;
+	border-radius: rem(10);
+	overflow: hidden;
+	max-height: rem(500);
+	@include breakpoint-down(small) {
+		flex-direction: column;
+		flex-wrap: wrap;
+		max-height: rem(1500);
+		margin: rem(88) 0 rem(88);
+	}
+}
+
+.sedans,
+.suvs,
+.luxury {
+	padding: rem(49);
+	max-width: rem(305);
+}
+
+.btn {
+	padding: rem(16.5) rem(37) rem(16.5);
+	border-radius: rem(25);
+	outline: none;
+}
+
+.btn:hover {
+	border: rem(2) solid var(--white);
+	cursor: pointer;
+	transform: scale(1);
+}

@@ -1,0 +1,30 @@
+@use '../util' as *;
+
+h1,
+h2,
+h3 {
+	margin-top: 0;
+	line-height: 1.1;
+}
+
+h2 {
+	font-family: var(--font-header);
+	font-size: rem(34);
+	color: var(--very-ltgray);
+}
+
+p {
+	font-family: var(--font-main);
+	font-size: rem(15);
+	color: var(--trans-white-paragraph);
+}
+
+a,
+a:visited,
+a:active {
+	text-decoration: none;
+}
+
+.btn {
+	font-weight: bold;
+}
