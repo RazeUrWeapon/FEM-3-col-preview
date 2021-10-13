@@ -5,19 +5,19 @@ h2 {
 }
 
 p {
-	margin-bottom: rem(90);
+	margin-bottom: rem(87);
+	@include breakpoint-down(small) {
+		margin-bottom: rem(30);
+	}
 }
 
 .container {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	margin: auto;
-	height: 100vh;
+	min-height: 100vh;
 	max-width: rem(920);
-	@include breakpoint-down(small) {
-		justify-content: center;
-		height: fit-content;
-	}
 }
 
 .cards {
@@ -27,8 +27,7 @@ p {
 	max-height: rem(500);
 	@include breakpoint-down(small) {
 		flex-direction: column;
-		flex-wrap: wrap;
-		max-height: rem(1500);
+		max-height: max-content;
 		margin: rem(88) 0 rem(88);
 	}
 }
@@ -36,8 +35,11 @@ p {
 .sedans,
 .suvs,
 .luxury {
-	padding: rem(49);
+	padding: rem(45) rem(49) rem(47);
 	max-width: rem(305);
+	@include breakpoint-down(small) {
+		max-height: rem(440);
+	}
 }
 
 .btn {
