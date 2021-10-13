@@ -2,6 +2,9 @@
 
 h2 {
 	margin: rem(40) 0 rem(40);
+	@include breakpoint-down(small) {
+		margin: rem(35) 0 rem(35);
+	}
 }
 
 p {
@@ -11,12 +14,17 @@ p {
 	}
 }
 
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
 .container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin: auto;
-	min-height: 100vh;
 	max-width: rem(920);
 }
 
@@ -28,7 +36,7 @@ p {
 	@include breakpoint-down(small) {
 		flex-direction: column;
 		max-height: max-content;
-		margin: rem(88) 0 rem(88);
+		margin-top: rem(88);
 	}
 }
 
@@ -39,6 +47,7 @@ p {
 	max-width: rem(305);
 	@include breakpoint-down(small) {
 		max-height: rem(440);
+		max-width: rem(325);
 	}
 }
 
@@ -52,4 +61,10 @@ p {
 	border: rem(2) solid var(--white);
 	cursor: pointer;
 	transform: scale(1);
+}
+
+.attribution {
+	@include breakpoint-down(small) {
+		margin: rem(18.5) 0 rem(58.5);
+	}
 }
