@@ -65,6 +65,6 @@ body {
 
 .attribution {
 	@include breakpoint-down(small) {
-		margin: rem(18.5) 0 rem(58.5);
+		margin: rem(58.5) 0 rem(18.5);
 	}
 }
