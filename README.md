@@ -40,7 +40,7 @@ Users should be able to:
 
 This was my first time trying Sass and installing it via NPM and Gulp.
 
-Used the CSS function to convert pixels to rem. This is from [Codercoder's YouTube video](https://www.youtube.com/watch?v=NgaV7503dTk&t=954s).
+Used the Sass function to convert pixels to rem. This is from [Codercoder's YouTube video](https://www.youtube.com/watch?v=NgaV7503dTk&t=954s).
 
 ```css
 @use "sass:math";
